@@ -1,0 +1,145 @@
+/* Body Styling */
+body{
+    scroll-behavior: smooth;
+}
+/* Navbar image Styling */
+nav div a img{
+    width: 36px;
+}
+/* Dropdown Styling */
+.red:hover{
+    background-color: goldenrod;
+}
+.pointer{
+    cursor: pointer;
+}
+#active:hover{
+    opacity: 1 !important;
+}
+.nav-link:hover{
+    opacity: 0.7;
+}
+/* Alert Styling */
+.alert{
+    position: absolute;
+    top: 62px;
+    width: 100%;
+}
+/* Color White */
+.color-white{
+    color: rgb(207, 207, 207) !important;
+}
+/* Crousel Items Styling */
+.carousel-item{
+    position: relative;
+    top: 62px;
+    height: 700px;
+    z-index: -1;
+}
+.carousel-item img{
+    width: 100%;
+    height: 100%;
+}
+/* Section2 Styling */
+#section2{
+    position: relative;
+    top: 7px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#section2 h2{
+    padding: 25px;
+}
+.card{
+    margin:11px 0 ;
+}
+#section2-container{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    width: 100%;
+}
+/* Section3 Styling */
+#section3{
+    position: relative;
+    top: 94px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#section3 h1{
+    padding: 22px;
+}
+#section3 form{
+    width: 81.5%;
+}
+#section3-name-section{
+    margin-bottom: 17px;
+}
+/* Footer Styling */
+footer{
+    position: relative;
+    top: 170px;
+    background-color: rgb(139, 139, 139);
+}
+footer #footer-container{
+    display: flex;
+    flex-direction: column;
+    padding: 0 14px;
+    height:100%;
+    list-style: none;
+    width: 100%;
+    left: 4%;
+    justify-content: space-around;
+}
+#footer-container ul{
+    display: flex;
+    list-style: none;
+    justify-content: space-around;
+    
+}
+#footer-container ul li a{
+    text-decoration: none;
+    
+}
+#footer-container ul li a:hover{
+    color: red;
+}
+#footer-container div{
+    color: white;
+    background-color: black;
+    text-align: center;
+    left: 4%;
+    width: 100%;
+    /* padding: 0; */
+}
+@media(max-width: 546px){
+    #footer-container ul{
+        display: block;
+        
+    }
+}
+@media(max-width: 586px){
+    .carousel-item{
+        width: 100%;
+        height: 415px;
+    }
+    .carousel-item img{
+        width: 100%;
+        height: 66%;
+    }
+    #section1{
+        height: 379px;
+    }
+    #section2{
+        top: -49px;
+    }
+    #section3{
+        top: 13px;
+    }
+    footer{
+        top: 62px;
+    }
+}
