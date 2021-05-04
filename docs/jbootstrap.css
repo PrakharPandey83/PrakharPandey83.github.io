@@ -29,21 +29,20 @@ nav div a img{
 .color-white{
     color: rgb(207, 207, 207) !important;
 }
-/* Crousel Items Styling */
-.carousel-item{
-    position: relative;
-    top: 62px;
-    height: 700px;
-    z-index: -1;
-}
-.carousel-item img{
+/* Section1 Styling */
+#section1{
+    background: url("/docs/bootstrapimagres/bg.jpg") no-repeat center center/cover;
+    position: absolute;
+    top: 0px;
+    left: 0;
     width: 100%;
     height: 100%;
+    z-index: -1;
 }
 /* Section2 Styling */
 #section2{
     position: relative;
-    top: 7px;
+    top: 700px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -63,7 +62,7 @@ nav div a img{
 /* Section3 Styling */
 #section3{
     position: relative;
-    top: 94px;
+    top: 724px;
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -81,7 +80,7 @@ nav div a img{
 /* Footer Styling */
 footer{
     position: relative;
-    top: 170px;
+    top: 824px;
     background-color: rgb(139, 139, 139);
 }
 footer #footer-container{
@@ -119,27 +118,5 @@ footer #footer-container{
     #footer-container ul{
         display: block;
         
-    }
-}
-@media(max-width: 586px){
-    .carousel-item{
-        width: 100%;
-        height: 415px;
-    }
-    .carousel-item img{
-        width: 100%;
-        height: 66%;
-    }
-    #section1{
-        height: 379px;
-    }
-    #section2{
-        top: -49px;
-    }
-    #section3{
-        top: 13px;
-    }
-    footer{
-        top: 62px;
     }
 }
