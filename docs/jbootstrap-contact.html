@@ -7,11 +7,11 @@
 
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
-    <link rel="stylesheet" href="/docs/jbootstrap-contact.css">
+    <link rel="stylesheet" href="/jbootstrap-contact.css">
     <title>Contact| MyMeals.com</title>
   </head>
   <body>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light navbar-dark bg-dark fixed-top">
+    <nav class="navbar navbar-expand-lg navbar-light navbar-dark fixed-top">
       <div class="container-fluid">
         <a class="navbar-brand" href="/bootstrap.html"><img src="bootstrapimagres/Logo.png" alt="GreatMeals.com"></a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
@@ -21,44 +21,72 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav me-auto mb-2 mb-lg-0">
             <li class="nav-item pointer">
-              <a class="nav-link" aria-current="page" href="/docs/index.html">Home</a>
+              <a class="nav-link" aria-current="page" href="/index.html">Home</a>
             </li>
             <li class="nav-item pointer">
-              <a class="nav-link color-white" href="/docs/bootstrap.html#food-ordering" tabindex="-1">Services</a>
+              <a class="nav-link color-white" href="/bootstrap.html#food-ordering" tabindex="-1">Services</a>
             </li>
             <li class="nav-item pointer">
               <a class="nav-link color-white active" href="#" id="active" tabindex="-1">Contact</a>
             </li>
             <li class="nav-item pointer">
-              <a class="nav-link color-white" href="/docs/jbootstrap-about.html" tabindex="-1">About</a>
+              <a class="nav-link color-white" href="/jbootstrap-about.html" tabindex="-1">About</a>
             </li>
           </ul>
-          <form class="d-flex">
-            <input class="form-control me-2 top" type="search" placeholder="Search" aria-label="Search">
-            <button class="btn btn-outline-success top" type="submit">Search</button>
-          </form>
         </div>
       </div>
     </nav>
-    <section id="sec1"></section>
-    <section id="sec2">
-
-      <h1>Contact Us</h1>
-      <h4>Fill this form and submit, and recieve our call.</h4>
-      <form class="row g-3 needs-validation" novalidate id="form2">
-        <div class="row mb-3 full-width">
-          <div class="col-sm-10 full-width">
-            <input type="email" class="form-control" id="inputEmail3" placeholder="Username or Email">
+    <section id="section1">
+      <div id="cntnr-div">
+        <h2>How Can We Help You</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed, consectetur. Vel similique vero corporis
+          reiciendis, quia voluptatem id rerum asperiores.</p>
+      </div>
+      <div id="dark-div"></div>
+    </section>
+    <section id="section2">
+      <h1>Contact</h1>
+      <form action="#">
+        <div class="row g-3" id="section2-name-section">
+          <div class="col">
+            <input type="text" class="form-control" placeholder="First name" aria-label="First name">
+          </div>
+          <div class="col">
+            <input type="text" class="form-control" placeholder="Last name" aria-label="Last name">
           </div>
         </div>
-        <div class="row mb-3 full-width">
-          <div class="col-sm-10 full-width">
-            <input type="password" class="form-control" id="inputPassword3" placeholder="Password">
+        <form>
+          <div class="row mb-3">
+            <label for="inputEmail3" class="col-sm-2 col-form-label">Email</label>
+            <div class="col-sm-10">
+              <input type="email" class="form-control" id="inputEmail3">
+            </div>
           </div>
-        </div>
-        <div class="col-12">
-          <button class="btn btn-primary" type="submit">Submit form</button>
-        </div>
+          <div class="row mb-3">
+            <label for="inputPassword3" class="col-sm-2 col-form-label">Password</label>
+            <div class="col-sm-10">
+              <input type="password" class="form-control" id="inputPassword3">
+            </div>
+          </div>
+          <fieldset class="row mb-3">
+            <legend class="col-form-label col-sm-2 pt-0">Contact Via</legend>
+            <div class="col-sm-10">
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios1" value="option1" checked>
+                <label class="form-check-label" for="gridRadios1">
+                  Call
+                </label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios2" value="option2">
+                <label class="form-check-label" for="gridRadios2">
+                  Message
+                </label>
+              </div>
+            </div>
+          </fieldset>
+          <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
       </form>
     </section>
     <!-- Footer -->

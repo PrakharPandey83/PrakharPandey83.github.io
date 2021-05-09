@@ -1,67 +1,73 @@
-form{
-    position: relative;
-    top: 52px;
-}
 h1{
     padding-top: 75px;
     padding-bottom: 41px;}
+/* Body Styling */
 body{
-    padding: 22px;
-    overflow-x: hidden;
+    scroll-behavior: smooth;
+    height: auto;
 }
 /* Navbar image Styling */
+nav{
+    background-color: #00000054;
+}
 nav div a img{
     width: 36px;
 }
-/* Dropdown Styling */
-.red:hover{
-    background-color: goldenrod;
+#active{
+    color: azure;
+    background-color: red;
 }
-.pointer{
-    cursor: pointer;
-}
-#active:hover{
-    opacity: 1 !important;
-}
-.nav-link:hover{
-    opacity: 0.7;
-}
-.top{
-    position: relative;
-    top: -52px !important;
-}
-#sec1{
+
+/* Section1 Styling */
+#section1{
     content: "";
-    background: url("/docs/bootstrapimagres/pexels-andrea-piacquadio-3781570.jpg") no-repeat top center/cover;
+    background: url("/bootstrapimagres/apples-1776744_1920.jpg") no-repeat center center/cover;
     position: absolute;
-    top: 57px;
+    top: 0px;
     left: 0;
     width: 100%;
     height: 100%;
     z-index: -1;
 }
-#sec2{
+#section1 #cntnr-div{
     position: absolute;
-    top: 732px;
+    top: 280px;
     text-align: center;
-    width: 97%;
-    left: 2%;
-    height: 512px;
-}
-#form2{
     width: 100%;
-    position: relative;
-    left: 2%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    height: 145px;
+    color: white;
+    padding: 0 22px;
 }
+
+/* section2 Styling */
+#section2{
+    position: relative;
+    top: 774px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#section2 h1{
+    padding: 22px;
+    padding-bottom: 82px;
+}
+#section2 form{
+    width: 81.5%;
+}
+#section2-name-section{
+    margin-bottom: 17px;
+}
+
+
 
 /* Footer Styling */
 footer{
     position: relative;
-    top: 1230px;
-    left: -22px;
-    padding: 22px;
-    width: 100vw;
-    padding-bottom: 0 !important;
+    top: 930px;
     background-color: rgb(139, 139, 139);
 }
 footer #footer-container{
@@ -69,6 +75,7 @@ footer #footer-container{
     flex-direction: column;
     padding: 0 14px;
     height:100%;
+    padding-top: 17px;
     list-style: none;
     width: 100%;
     left: 4%;
@@ -91,15 +98,17 @@ footer #footer-container{
     color: white;
     background-color: black;
     text-align: center;
-    left: -35px;
-    position: relative;
-    width: 100vw;
+    left: 4%;
+    width: 100%;
+    /* padding: 0; */
 }
 @media(max-width: 546px){
     #footer-container ul{
         display: block;
         
     }
+}
+@media(max-width: 546px){
     #form2{
         width: 91%;
         position: relative;
@@ -114,9 +123,7 @@ footer #footer-container{
     .col-12 {
         width: 96%;
     }
-    #footer-container div {
-        width: 99.4vw;
-    }
+
 }
 .full-width{
     width: 100% !important;

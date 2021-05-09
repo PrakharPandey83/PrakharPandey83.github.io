@@ -1,7 +1,12 @@
+/* Body Styling */
 body{
-    padding: 22px;
+    scroll-behavior: smooth;
+    height: auto;
 }
 /* Navbar image Styling */
+nav{
+    background-color: #00000054;
+}
 nav div a img{
     width: 36px;
 }
@@ -12,36 +17,119 @@ nav div a img{
 .pointer{
     cursor: pointer;
 }
+#active{
+    color: azure;
+    background-color: red;
+}
 #active:hover{
     opacity: 1 !important;
 }
 .nav-link:hover{
     opacity: 0.7;
 }
-h1{
-    display: inline-block;
-    width: 55%;
-    padding: 54px 0;
+/* Color White */
+.color-white{
+    color:white !important;
 }
-.flex li a:hover{
-    color: red;
-}
-
-#sec1{
+/* Section1 Styling */
+#section1{
     content: "";
-    background: url("/docs/bootstrapimagres/irene-kredenets-sV0KXYrb-5s-unsplash.jpg") no-repeat center center/cover;
+    background: url("/bootstrapimagres/strawberries-3431122_1920.jpg") no-repeat center center/cover;
     position: absolute;
-    top: 57px;
+    top: 0px;
     left: 0;
     width: 100%;
-    height: 228%;
+    height: 100%;
     z-index: -1;
 }
-
-#sec2{
+#section1 #cntnr-div{
     position: absolute;
-    top: 1322px;
-}
-#sec2 p{
+    top: 280px;
+    text-align: center;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    height: 145px;
+    color: white;
     padding: 0 22px;
+}
+
+
+/* Section2 Styling */
+#section2{
+    position: relative;
+    top: 712px;
+    padding: 0 57px;
+    display: flex;
+    flex-direction: column;
+}
+#section2 h2{
+    padding: 114px 0;;
+}
+.card{
+    margin:11px 0 ;
+    align-items: center;
+    border: none !important;
+}
+.card div{
+    text-align: center;
+}
+.card img{
+    width: 30%;
+}
+#section2-container{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    width: 100%;
+}
+h4{
+    margin-bottom: 22px;
+}
+
+
+/* Footer Styling */
+footer{
+    position: relative;
+    top: 894px;
+    background-color: rgb(139, 139, 139);
+}
+footer #footer-container{
+    display: flex;
+    flex-direction: column;
+    padding: 0 14px;
+    height:100%;
+    padding-top: 17px;
+    list-style: none;
+    width: 100%;
+    left: 4%;
+    justify-content: space-around;
+}
+#footer-container ul{
+    display: flex;
+    list-style: none;
+    justify-content: space-around;
+    
+}
+#footer-container ul li a{
+    text-decoration: none;
+    
+}
+#footer-container ul li a:hover{
+    color: red;
+}
+#footer-container div{
+    color: white;
+    background-color: black;
+    text-align: center;
+    left: 4%;
+    width: 100%;
+    /* padding: 0; */
+}
+@media(max-width: 546px){
+    #footer-container ul{
+        display: block;
+        
+    }
 }

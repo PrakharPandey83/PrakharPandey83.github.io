@@ -1,8 +1,12 @@
 /* Body Styling */
 body{
     scroll-behavior: smooth;
+    height: auto;
 }
 /* Navbar image Styling */
+nav{
+    background-color: #00000054;
+}
 nav div a img{
     width: 36px;
 }
@@ -13,25 +17,24 @@ nav div a img{
 .pointer{
     cursor: pointer;
 }
+#active{
+    color: azure;
+    background-color: red;
+}
 #active:hover{
     opacity: 1 !important;
 }
 .nav-link:hover{
     opacity: 0.7;
 }
-/* Alert Styling */
-.alert{
-    position: absolute;
-    top: 62px;
-    width: 100%;
-}
 /* Color White */
 .color-white{
-    color: rgb(207, 207, 207) !important;
+    color:white !important;
 }
 /* Section1 Styling */
 #section1{
-    background: url("/docs/bootstrapimagres/bg.jpg") no-repeat center center/cover;
+    content: "";
+    background: url("/bootstrapimagres/raspberries-2023404_1920.jpg") no-repeat center center/cover;
     position: absolute;
     top: 0px;
     left: 0;
@@ -39,19 +42,39 @@ nav div a img{
     height: 100%;
     z-index: -1;
 }
+#section1 #cntnr-div{
+    position: absolute;
+    top: 280px;
+    text-align: center;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    height: 145px;
+    color: white;
+    padding: 0 22px;
+}
 /* Section2 Styling */
 #section2{
     position: relative;
-    top: 700px;
+    top: 712px;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 #section2 h2{
-    padding: 25px;
+    padding: 114px 0;;
 }
 .card{
     margin:11px 0 ;
+    align-items: center;
+    border: none !important;
+}
+.card div{
+    text-align: center;
+}
+.card img{
+    width: 30%;
 }
 #section2-container{
     display: flex;
@@ -59,28 +82,66 @@ nav div a img{
     flex-wrap: wrap;
     width: 100%;
 }
-/* Section3 Styling */
+
+/* section3 Styling */
 #section3{
     position: relative;
-    top: 724px;
+    top: -100px;
+    height: 500px;
+}
+#section3-sub{
+    background: url("/bootstrapimagres/pizza-3010062_1920.jpg") no-repeat center center/cover;
+    position: absolute;
+    top: 1000px;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+#section3 #cntnr-div-3{
+    position: absolute;
+    top: 144px;
+    text-align: center;
+    width: 24%;
+    left: 0;
+    margin: 0 22px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    height: 205px;
+    color: black;
+}
+
+
+
+
+/* section4 Styling */
+#section4{
+    position: relative;
+    top: 974px;
     width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
-#section3 h1{
+#section4 h1{
     padding: 22px;
+    padding-bottom: 82px;
 }
-#section3 form{
+#section4 form{
     width: 81.5%;
 }
-#section3-name-section{
+#section4-name-section{
     margin-bottom: 17px;
 }
+
+
+
+
 /* Footer Styling */
 footer{
     position: relative;
-    top: 824px;
+    top: 1194px;
     background-color: rgb(139, 139, 139);
 }
 footer #footer-container{
@@ -88,6 +149,7 @@ footer #footer-container{
     flex-direction: column;
     padding: 0 14px;
     height:100%;
+    padding-top: 17px;
     list-style: none;
     width: 100%;
     left: 4%;
@@ -113,6 +175,22 @@ footer #footer-container{
     left: 4%;
     width: 100%;
     /* padding: 0; */
+}
+@media(max-width: 900px){
+    #section3 #cntnr-div-3 {
+        margin: 0;
+        width: 96%;
+        padding: 0 22px;
+    }
+    #section3 #dark-div-3::after{
+        content: "";
+        background: white;
+        position: absolute;
+        opacity: 0.16;
+        width: 100%;
+        height: 100%;
+        z-index: -1;
+    }
 }
 @media(max-width: 546px){
     #footer-container ul{
