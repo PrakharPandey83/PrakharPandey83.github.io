@@ -40,7 +40,7 @@
             </ul>
           </li>
           <li class="nav-item pointer">
-            <a class="nav-link color-white" href="jbootstrap-contact.html" tabindex="-1">Contact</a>
+            <a class="nav-link color-white" href="/jbootstrap-contact.html" tabindex="-1">Contact</a>
           </li>
           <li class="nav-item pointer">
             <a class="nav-link color-white" href="/jbootstrap-about.html" tabindex="-1">About</a>
@@ -217,22 +217,25 @@
     let Services_tab = document.getElementById("navbarDropdown");
 
 
-
     let Active = document.getElementById("active");
     let Section2 = document.getElementById("section2");
-    
-    
-    
-    
+
+
+
+
     function bgcolor() {
-      Active.style.backgroundColor="revert";
+      Active.style.backgroundColor = "revert";
       Services_tab.style.backgroundColor = "red";
     }
     function reverse_bgcolor() {
       Active.style.backgroundColor = "red";
       Services_tab.style.backgroundColor = "revert";
     }
-
+    function init_position() {
+      Active.href = "#";
+      Active.style.backgroundColor = "red";
+      Services_tab.style.backgroundColor = "revert";
+    }
 
     Ordering.addEventListener("click", bgcolor);
     Catering.addEventListener("click", bgcolor);
@@ -241,7 +244,7 @@
     Section2.addEventListener("mouseenter", bgcolor);
     Section2.addEventListener("mouseleave", reverse_bgcolor);
 
-
+    Active.addEventListener("click", init_position);
 
   </script>
 </body>
