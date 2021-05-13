@@ -184,20 +184,13 @@ footer #footer-container{
 #footer-container ul li a:hover{
     color: red;
 }
-#footer-container div{
+footer div:nth-child(2){
     color: white;
     background-color: black;
     text-align: center;
     position: relative;
-    width: 98.6vw;
-    left: -14.65px;
 }
-@media(max-width: 1400px){
-    #footer-container div{
-        width: 100vw;
-        left: -13px;
-    }
-}
+
 @media(max-width: 900px){
     #section3 #cntnr-div-3 {
         margin: 0;
@@ -217,13 +210,6 @@ footer #footer-container{
 @media(max-width: 546px){
     #footer-container ul{
         display: block;
-        
-    }
-}
-@media(max-width: 352px){
-    #footer{
-        width: 99.4vw;
-        left: -12.8px;
         
     }
 }
